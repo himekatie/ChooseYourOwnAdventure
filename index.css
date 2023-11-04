@@ -1,5 +1,12 @@
 body{
-    background-color: rgb(161, 116, 224);
+    /*background-color: rgb(27, 31, 101);*/
+    background-image: url("Space Background.PNG"); 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
 }
 
 
@@ -14,23 +21,14 @@ body{
 }
 
 
-#h1{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    background-color: blueviolet;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    
-    
-}
-
 .space_font{
     font-family: "Audiowide", sans-serif;
     color: black;
-    background-color: blueviolet;
+    background-color: rgb(76, 87, 207);
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
