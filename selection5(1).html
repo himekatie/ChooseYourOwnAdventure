@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <title>
+            Choose Your Own Adventure!
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <script>
+            function Start_Over(){
+                const Button = document.getElementById("start over");
+                location.assign("index.html")
+            }
+
+            let score = 0;
+            function Good(){
+                score = score + 3;
+                location.assign("selection5(2).html")
+            }
+            function Neutral(){
+                score = score + 2;
+                location.assign("selection5(2).html")
+            }
+            function Bad(){
+                score = score + 0;
+                location.assign("selection5(2).html")
+            }
+            function findout(){
+                console.log(score);
+            }
+        </script>
+
+
+        <meta 
+            name = "viewpoint"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
+    </head>
+
+    <body>
+        <div class="text">
+        
+        <p class="space_font">
+            The alien makes contact with his race, and they respond by saying they will send a rescue ship. You 
+
+        </p>
+
+        </div>
+
+        <div><!-- Buttons-->
+            <button class="button" onclick="Good()">
+                Ask: do  you need any more help?(good)
+            </button>
+            <button class="button" onclick="Neutral()">
+                Ask: Can I go?(neutral)
+            </button>
+            <button class="button" onclick="Bad()">
+                Think: Will the government give me reward money for bringing you in?(bad)
+            </button>
+        </div>
+
+        <div>
+            <button id="start_button" onclick = "Start_Over()">
+                <b>Start Over </b>
+            </button>
+        </div>
+
+    </body>
+
+
+
+
+</html>

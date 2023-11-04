@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <title>
+            Choose Your Own Adventure!
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <script>
+             function Start_Over(){
+                const Button = document.getElementById("start over");
+                location.assign("index.html")
+            }
+
+            let score = 0;
+            function Good(){
+                score = score + 3;
+                location.assign("selection3.html")
+            }
+            function Neutral(){
+                score = score + 2;
+                location.assign("selection3.html")
+            }
+            function Bad(){
+                score = score + 0;
+                location.assign("selection3.html")
+            }
+            function findout(){
+                console.log(score);
+            }
+        </script>
+
+
+        <meta 
+            name = "viewpoint"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
+    </head>
+
+    <body>
+        <div class="text">
+        
+        <p class="space_font">
+            It opened its 5 eyes and moved a little and you got a better look at it, you’ve never seen anything like it and figured it was an alien. It said something in its own language and you…
+
+        </p>
+
+        </div>
+
+        <div><!-- Buttons-->
+            <button class="button" onclick="Good()">
+                Talk to it calmly asking if it understands you and needs help?(Good)
+            </button>
+            <button class="button" onclick="Neutral()">
+                Continued to stare at it(Netural)
+            </button>
+            <button class="button" onclick="Bad()">
+                Screamed at it (Bad)
+            </button>
+        </div>
+
+        <div>
+            <button id="start_button" onclick = "Start_Over()">
+                <b>Start Over </b>
+            </button>
+
+            <!--
+            <button class="button" onclick="findout()">
+                results
+            </button>
+            -->
+
+        </div>
+
+    </body>
+
+
+
+
+</html>

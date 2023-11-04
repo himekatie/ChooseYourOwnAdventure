@@ -7,19 +7,23 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <script>
-            function Start(){
-                const Button = document.getElementById("start");
-                location.assign("selection1.html")
+            function Start_Over(){
+                const Button = document.getElementById("start over");
+                location.assign("index.html")
             }
+
             let score = 0;
             function Good(){
                 score = score + 3;
+                location.assign("selection6.html")
             }
             function Neutral(){
                 score = score + 2;
+                location.assign("selection6.html")
             }
             function Bad(){
                 score = score + 0;
+                location.assign("Bad_End.html")
             }
             function findout(){
                 console.log(score);
@@ -34,27 +38,18 @@
     </head>
 
     <body>
+        <div class="text">
         
-        <div id = "start_font">
-        <h1>
-            Welcome!
-        </h1>
-        </div>
-        
-
-        <div class="space_font">
-        <p>
-            This is a choose your own adventure. There will be situations and you will have to make a choice and those choices may impact everyone’s future.
-            You are a typical human living on Blue Planet in the year 2050. You are a health care worker on vacation. One day while shopping . . . . 
+        <p class="space_font">
+            The police take you to the hospital because you are not responding to them and look very confused. A week later a broadcast announces that there are aliens who have been here, but they want nothing to do with us because of a representative we did not send. 
 
         </p>
+
         </div>
 
-    
-
-        <div><!-- Buttons-->
-            <button id="start_button" onclick = "Start()">
-                <b>Start </b>
+        <div>
+            <button id="start_button" onclick = "Start_Over()">
+                <b>Start Over </b>
             </button>
         </div>
 
