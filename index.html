@@ -6,6 +6,25 @@
         </title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <script>
+            function Start(){
+                const Button = document.getElementById("start");
+                location.assign("OtherWebsite.html")
+            }
+            let score = 0;
+            function Good(){
+                score = score + 3;
+            }
+            function Neutral(){
+                score = score + 2;
+            }
+            function Bad(){
+                score = score + 0;
+            }
+            function findout(){
+                console.log(score);
+            }
+        </script>
 
 
         <meta 
@@ -26,6 +45,24 @@
 
         </p>
 
+        </div>
+
+        <div><!-- Buttons-->
+            <button onclick = "Start()">
+                Start
+            </button>
+            <button onclick="Good()">
+                Good
+            </button>
+            <button onclick="Neutral()">
+                Nuetral
+            </button>
+            <button onclick="Bad()">
+                Bad
+            </button>
+            <button onclick="findout()">
+                results
+            </button>
         </div>
 
     </body>
