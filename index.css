@@ -258,6 +258,14 @@ body{
     margin-bottom: 50px;
 }
 
+#bad1background{
+    background-image: url("Police.PNG"); 
+}
+
+#bad2background{
+    background-image: url("experiment.PNG");
+}
+
 
 
 
