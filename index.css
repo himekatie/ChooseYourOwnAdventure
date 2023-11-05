@@ -266,7 +266,17 @@ body{
     background-image: url("experiment.PNG");
 }
 
+#neutral1background{
+    background-image: url("hospital.PNG");
+}
 
+#neutral2background{
+    background-image: url("broadcast.PNG");
+}
+
+#goodendingbackground{
+    background-image: url("earthtreaty.PNG");
+}
 
 
 
