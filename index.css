@@ -126,7 +126,33 @@ body{
 }
 
 
+.end{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    font-size: 30px;
+
+    font-family: "Audiowide", sans-serif;
+    color: black;
+    background-color: rgb(76, 87, 207);
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+
+}
 
 
 
