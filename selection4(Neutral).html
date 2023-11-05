@@ -7,18 +7,18 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <script>
-             function Start_Over(){
+            function Start_Over(){
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
             function Good(){
-                location.assign("selection3(Good).html")
+                location.assign("selection5(Good).html")
             }
             function Neutral(){
-                location.assign("selection3(Neutral).html")
+                location.assign("selection5(Neutral).html")
             }
             function Bad(){
-                location.assign("selection3(Bad).html")
+                location.assign("selection5(Bad).html")
             }
             function findout(){
                 console.log(score);
@@ -36,24 +36,25 @@
         <div class="text">
         
         <p class="space_font">
-            It opened its 5 eyes and moved a little and you got a better look at it, you’ve never seen anything like it and figured it was an alien. It said something in its own language and you . . .
+            They ask you if you represent the human race and you respond yes. The Alien tells you that they need help with their injuries and they need to find their ship, you
 
         </p>
 
         </div>
 
         <div><!-- Buttons-->
-            <button class="button" onclick="Good()">
-                Talk to it calmly asking if it understands you and needs help? (Good)
-            </button>
 
-            <button class="button" onclick="Bad()">
-                Screamed at it! (Bad)
-            </button>
+        <button class="button" onclick="Bad()">
+            Are too rough when helping them with their injuries and hurt them more, but you head in the direction that you think you saw their ship(bad)
+        </button>
 
-            <button class="button" onclick="Neutral()">
-                Continued to stare at it. . . (Netural)
-            </button>
+        <button class="button" onclick="Good()">
+            Yes, I’m trained in first aid and will help you get better enough and I think your ship is this way(good)
+        </button>
+
+        <button class="button" onclick="Neutral()">
+            I don’t know anything about you biology, but I think your ship is that way(netral)  
+        </button> 
 
         </div>
 
@@ -61,13 +62,6 @@
             <button id="start_button" onclick = "Start_Over()">
                 <b>Start Over </b>
             </button>
-
-            <!--
-            <button class="button" onclick="findout()">
-                results
-            </button>
-            -->
-
         </div>
 
     </body>

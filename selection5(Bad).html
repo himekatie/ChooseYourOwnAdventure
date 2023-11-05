@@ -11,18 +11,14 @@
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
-            let score;
             function Good(){
-                score = score + 3;
-                location.assign("selection6.html")
+                location.assign("selection6(Neutral).html")
             }
             function Neutral(){
-                score = score + 2;
-                location.assign("selection6.html")
+                location.assign("selection6(Neutral).html")
             }
             function Bad(){
-                score = score + 0;
-                location.assign("selection6.html")
+                location.assign("selection6(Bad).html")
             }
             function findout(){
                 console.log(score);

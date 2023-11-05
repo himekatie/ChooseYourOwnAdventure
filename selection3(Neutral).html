@@ -7,18 +7,18 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <script>
-             function Start_Over(){
+            function Start_Over(){
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
             function Good(){
-                location.assign("selection3(Good).html")
+                location.assign("selection4(Good).html")
             }
             function Neutral(){
-                location.assign("selection3(Neutral).html")
+                location.assign("selection4(Neutral).html")
             }
             function Bad(){
-                location.assign("selection3(Bad).html")
+                location.assign("selection4(Bad).html")
             }
             function findout(){
                 console.log(score);
@@ -36,43 +36,29 @@
         <div class="text">
         
         <p class="space_font">
-            It opened its 5 eyes and moved a little and you got a better look at it, you’ve never seen anything like it and figured it was an alien. It said something in its own language and you . . .
-
+            The Alien then spoke inside your head. I have read your mind and learned your language and can understand you. I can see that you are nervous, but can you help me?
         </p>
 
         </div>
 
         <div><!-- Buttons-->
             <button class="button" onclick="Good()">
-                Talk to it calmly asking if it understands you and needs help? (Good)
+                SAY: "Yes, of course, sorry for my confusion, I can tell you are injured I have a first aid kit." (good)
             </button>
-
-            <button class="button" onclick="Bad()">
-                Screamed at it! (Bad)
-            </button>
-
             <button class="button" onclick="Neutral()">
-                Continued to stare at it. . . (Netural)
+                I don’t know, what do you need help with? (neutral)
             </button>
-
+            <button class="button" onclick="Bad()">
+                SAY: "I can help you, but what do I get in return?" (bad)
+            </button>
         </div>
 
         <div>
             <button id="start_button" onclick = "Start_Over()">
                 <b>Start Over </b>
             </button>
-
-            <!--
-            <button class="button" onclick="findout()">
-                results
-            </button>
-            -->
-
         </div>
 
     </body>
-
-
-
 
 </html>

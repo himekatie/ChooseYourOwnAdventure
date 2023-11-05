@@ -11,18 +11,18 @@
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
-            let score;
+            let score = 0;
             function Good(){
                 score = score + 3;
-                location.assign("selection4.html")
+                location.assign("selection6.html")
             }
             function Neutral(){
                 score = score + 2;
-                location.assign("selection4.html")
+                location.assign("selection6.html")
             }
             function Bad(){
                 score = score + 0;
-                location.assign("selection4.html")
+                location.assign("Bad_End.html")
             }
             function findout(){
                 console.log(score);
@@ -37,24 +37,13 @@
     </head>
 
     <body>
-        <div class="text">
+        <div id="bad">
         
-        <p class="space_font">
-            The Alien then spoke inside your head. "I have read your mind and learned your language and can understand you. My ship crashed, as I was traveling to study a nearby moon. Can you help me heal and find my ship?" You . . .
+        <p>
+            After Knocking them out you kidnapped them for your own experiments. Their alien species found out and abducted you.Repayed your kindness with experiments on you.  But because of your actions they view the human race as a potential enemy, and it could lead to war in the future.
+
         </p>
 
-        </div>
-
-        <div><!-- Buttons-->
-            <button class="button" onclick="Good()">
-                SAY: "Yes, I’m trained in first aid and will help you get better enough. Your ship might be this way." (good)
-            </button>
-            <button class="button" onclick="Neutral()">
-                Give the alien your first aid kit from your backpack and then step back and stare at it. (neutral)
-            </button>
-            <button class="button" onclick="Bad()">
-                SAY: "I can help you, but what do I get in return?" (bad)
-            </button>
         </div>
 
         <div>
@@ -64,5 +53,4 @@
         </div>
 
     </body>
-
 </html>

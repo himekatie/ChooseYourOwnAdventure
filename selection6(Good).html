@@ -11,34 +11,15 @@
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
-            let score;
             function Good(){
-                score = score + 3;
-                if (score>= 13){
-                    location.assign("Good_End.html")
-                }
-                else if (score <13 && score >=8){
-                    location.assign("Normal_End.html")
-                }
-                else{
-                    location.assign("Bad_End.html")
-                }
+                location.assign("Good_End.html")
+
             }
             function Neutral(){
-                score = score + 2;
-                if (score>= 13){
-                    location.assign("Good_End.html")
-                }
-                else if (score <13 && score >=8){
-                    location.assign("Normal_End.html")
-                }
-                else{
-                    location.assign("Bad_End.html")
-                }
+                location.assign("Neutral_End.html")
             }
             function Bad(){
-                score = score + 0;
-                location.assign("Bad_End.html")
+                location.assign("Bad_End(2).html")
             }
             function findout(){
                 console.log(score);
@@ -57,7 +38,7 @@
         <div class="text">
         
         <p class="space_font">
-            The alien shape shifts in front of you and now looks like a human, then you head outside and see that the ship is cloaked and turned invisible. The police arrive and ask you is there anything going on here and you . . .
+            You have helped me a lot, I would ask if you could wait with me until my rescue ship arrives
 
         </p>
 
@@ -65,13 +46,13 @@
 
         <div><!-- Buttons-->
             <button class="button" onclick="Good()">
-                Tell the police that nothing is wrong and you are just walking back from shopping with your friend.(good)
+                Of course I can wait 
             </button>
             <button class="button" onclick="Bad()">
-                Run over to the police and tell them everything you know and ask if you can get reward money for helping them out. (bad)(immediately bad ending no matter the score)
+                You knock them them out, because you were just playing nice the whole time
             </button>
             <button class="button" onclick="Neutral()">
-                Stand there looking very confused and doesn't say anything. (neutral)
+                I guess I can wait, I do have to go home
             </button>
         </div>
 

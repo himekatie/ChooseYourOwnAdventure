@@ -11,18 +11,14 @@
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
-            let score;
             function Good(){
-                score = score + 3;
-                location.assign("selection5(2).html")
+                location.assign("selection5(Good).html")
             }
             function Neutral(){
-                score = score + 2;
-                location.assign("selection5(2).html")
+                location.assign("selection5(Neutral).html")
             }
             function Bad(){
-                score = score + 0;
-                location.assign("selection5(2).html")
+                location.assign("selection5(Bad).html")
             }
             function findout(){
                 console.log(score);
@@ -40,22 +36,26 @@
         <div class="text">
         
         <p class="space_font">
-            The alien makes contact with his race, and they respond by saying they will send a rescue ship. You . . .
+            After the Alien stands up and you both find his ship. They ask you if you represent the human race and you respond yes. They head inside their ship and you . . .
 
         </p>
 
         </div>
 
         <div><!-- Buttons-->
-            <button class="button" onclick="Neutral()">
-                ASK: "Can I go now?" (neutral)
-            </button>
-            <button class="button" onclick="Bad()">
-                THINK: "Will the government give me reward money for bringing you in?" (bad)
-            </button>
-            <button class="button" onclick="Good()">
-                ASK: "Do  you need any more help?" (good)
-            </button>
+
+        <button class="button" onclick="Bad()">
+            Take a selfie and post it to social media with location services turned on. (bad) (goes to different file)
+        </button>
+
+        <button class="button" onclick="Good()">
+                Follow them and strike up a conversation. (good)
+        </button>
+
+        <button class="button" onclick="Neutral()">
+                Follow them but stay a good distance away. (neutral)
+        </button>
+        
         </div>
 
         <div>
