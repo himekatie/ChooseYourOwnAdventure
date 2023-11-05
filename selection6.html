@@ -15,18 +15,7 @@
             let score = 0;
             function Good(){
                 score = score + 3;
-            }
-            function Neutral(){
-                score = score + 2;
-            }
-            function Bad(){
-                score = score + 0;
-                location.assign("Bad_End.html")
-            }
-            function findout(){
-                console.log(score);
-            }
-            function result(){
+
                 if (score>= 13){
                     location.assign("Good_End.html")
                 }
@@ -37,6 +26,27 @@
                     location.assign("Bad_End.html")
                 }
             }
+            function Neutral(){
+                score = score + 2;
+
+                if (score>= 13){
+                    location.assign("Good_End.html")
+                }
+                else if (score <13 && score >=8){
+                    location.assign("Normal_End.html")
+                }
+                else{
+                    location.assign("Bad_End.html")
+                }
+            }
+            function Bad(){
+                score = score + 0;
+                location.assign("Bad_End.html")
+            }
+            function findout(){
+                console.log(score);
+            }
+           
         </script>
 
 
@@ -57,13 +67,13 @@
         </div>
 
         <div><!-- Buttons-->
-            <button class="button" onclick="Good()" onclick = "result()">
+            <button class="button" onclick="Good()">
                 Tell the police nothing and you are walking back from shopping with your friend.(good)
             </button>
-            <button class="button" onclick="Neutral()" onclick = "result()">
+            <button class="button" onclick="Neutral()">
                 stand there looking very confused(neutral)
             </button>
-            <button class="button" onclick="Bad()" onclick = "result()">
+            <button class="button" onclick="Bad()">
                 run over to the police and tell them everything you know and ask if you can get reward money for helping them out(bad)(immediately bad ending no matter the score)
             </button>
         </div>
@@ -71,6 +81,9 @@
         <div>
             <button id="start_button" onclick = "Start_Over()">
                 <b>Start Over </b>
+            </button>
+            <button class="button" onclick="findout()">
+                results
             </button>
         </div>
 

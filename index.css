@@ -79,7 +79,7 @@ body{
     margin-bottom: 50px;
 }
 
-#start_button{
+#start{
     margin: auto;
     width: 50%;
     height: 10%;
@@ -100,6 +100,29 @@ body{
     flex-direction: column;
     
 }
+
+#start_button{
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    padding: 10px;
+    
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
 
 .button{
     margin: auto;
