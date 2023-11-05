@@ -11,11 +11,9 @@
                 const Button = document.getElementById("start over");
                 location.assign("index.html")
             }
-
-            let score = 0;
+            let score;
             function Good(){
                 score = score + 3;
-
                 if (score>= 13){
                     location.assign("Good_End.html")
                 }
@@ -28,7 +26,6 @@
             }
             function Neutral(){
                 score = score + 2;
-
                 if (score>= 13){
                     location.assign("Good_End.html")
                 }
